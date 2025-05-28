@@ -41,7 +41,7 @@
 }
 
 .main-menu>li {
-
+    position: relative;
 }
 
 .main-menu>li:hover {
@@ -50,11 +50,18 @@
 }
 
 .sub-menu {
-    display: none;
+    display: flex;
+    width: 400px;
+
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    z-index: 100;
 }
 
 .sub-menu>li {
-
+    width: 100px;
 }
 
 .sub-menu>li:hover {

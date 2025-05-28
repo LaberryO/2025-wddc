@@ -1,3 +1,5 @@
+$(".sub-menu").hide();
+
 $(".main-menu>li").mouseenter(function () {
     $(this).children(".sub-menu").stop().slideDown();
 });
