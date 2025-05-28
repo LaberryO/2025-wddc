@@ -62,11 +62,13 @@
 
 .sub-menu>li {
     width: 100px;
+    background-color: white;
+    color: black;
 }
 
 .sub-menu>li:hover {
-    background-color: #ccc;
-    color: black;
+    background-color: #333;
+    color: white;
 }
 
 .spot-menu {
