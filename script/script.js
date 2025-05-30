@@ -1,5 +1,6 @@
 $(".gallery").hide();
 $(".sub-menu").hide();
+$(".modal").hide();
 
 $("#notice").click(() => {
     $("#notice").addClass("focus");
@@ -21,4 +22,12 @@ $(".main-menu").mouseover(() => {
 
 $(".main-menu").mouseleave(() => {
     $(".sub-menu").hide();
+});
+
+$("#modal").click(() => {
+    $(".modal").show();
+});
+
+$("#exit").click(() => {
+    $(".modal").hide();
 });
