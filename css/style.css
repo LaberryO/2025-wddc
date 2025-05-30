@@ -33,11 +33,11 @@ a {
 .logo1 {
     width: 200px;
     height: 100px;
-    border-bottom: 1px dashed black !important;
+    border-bottom: 1px dotted black !important;
     color: darkcyan;
 }
 
-.logo1, .logo2 {
+.logo1, .logo2, .family {
     font-weight: bold;
     font-size: larger;
     display: flex;
@@ -47,7 +47,7 @@ a {
 
 .menu {
     width: 200px;
-    height: 750px;
+    height: 700px;
     border-top: 0 !important;
     padding-top: 100px;
 }
@@ -100,7 +100,7 @@ a {
 }
 
 .sub-menu>li {
-    width: 100px;
+    width: 150px;
     background-color: white;
     color: black;
     padding: 5px;
@@ -141,7 +141,7 @@ a {
 .logo2 {
     width: 200px;
     height: 120px;
-    border-right: 1px dashed black !important;
+    border-right: 1px dotted black !important;
     color: #555;
 }
 
@@ -171,24 +171,6 @@ a {
     width: 100%;
     height: 100%;
     padding: 10px;
-}
-
-.shortcut ul li {
-    height: 30%;
-    width: 70%;
-    padding-top: 10px;
-    border-top: 1px dotted #000;
-    text-align: center;
-}
-
-.shortcut ul li:nth-child(1) {
-    border: 0;
-    padding: 0;
-}
-
-.shortcut ul li img {
-    width: 100%;
-    height: 70%;
 }
 
 .slide {
@@ -232,40 +214,36 @@ a {
 
 .banner {
     width: 100%;
-    height: 200px;
+    height: 150px;
     padding: 10px 20px;
-    border-bottom: 1px dashed #000 !important;
+    border-bottom: 1px dotted #000 !important;
 }
 
-.banner-box {
-    height: 180px;
-    border: 1px solid black;
-    padding: 5px 20px;
+.banner ul {
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-.banner-box>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.banner ul li {
+    width: 12%;
+    height: 90%;
+    text-align: center;
 }
 
-.banner-box img {
-    height: 100%;
-}
-
-.banner-box img:nth-child(3) {
-    height: 50%;
-    margin: 0 20px;
+.banner img {
+    width: 100%;
+    height: 70%;
 }
 
 .contents {
     width: 100%;
     height: 250px;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     border-top: 0 !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttons {
@@ -276,30 +254,33 @@ a {
     display: flex;
 }
 
-.buttons button {
-    background-color: #ccc;
+.contents button {
     color: black;
     border: 1px solid black;
-    height: 100%;
-    width: 6em;
-    cursor: pointer;
-}
-
-.buttons button.focus {
     background-color: white;
     border-bottom: 0;
+    width: 6em;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    left: 0;
 }
 
 .notice, .gallery {
+    width: 48%;
     margin-top: 30px;
-    border: 1px solid black;
+    border-top: 1px solid black;
     height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .notice ul {
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
 }
 
 .notice ul li {
@@ -308,7 +289,6 @@ a {
     margin-top: 7px;
     display: flex;
     justify-content: space-between;
-    padding-right: 50px;
 }
 
 .notice ul li:nth-child(1) {
@@ -320,25 +300,35 @@ a {
     height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px;
 }
 
 .gallery ul li {
     width: 32%;
-    height: 100%;
+    height: 80%;
+    text-align: center;
 }
 
 .gallery img {
     width: 100%;
-    height: 100%;
+    height: 70%;
+    border: 1px solid black;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 120px;
     border-left: 0 !important;
+    display: flex;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 220px);
+    height: 100%;
+    border-right: 1px dotted black;
 }
 
 .rules {
@@ -370,10 +360,15 @@ a {
     display: flex;
     align-items: center;
     font-size: smaller;
-    border-top: 1px dashed black;
+    border-top: 1px dotted black;
     width: 100%;
     height: 50%;
     padding: 0 10px;
+}
+
+.family {
+    width: 220px;
+    height: 100%;
 }
 
 .modal {

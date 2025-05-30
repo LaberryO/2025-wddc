@@ -1,6 +1,5 @@
 $(".sub-menu").hide();
 $(".sub-menu-back").hide();
-$(".gallery").hide();
 $(".modal").hide();
 
 $(".main-menu>li").mouseenter(function () {
@@ -11,20 +10,6 @@ $(".main-menu>li").mouseenter(function () {
 $(".main-menu>li").mouseleave(function () {
     $(".sub-menu").hide();
     $(".sub-menu-back").hide();
-});
-
-$("#notice").click(() => {
-    $(".notice").show();
-    $(".gallery").hide();
-    $("#notice").addClass("focus");
-    $("#gallery").removeClass("focus");
-});
-
-$("#gallery").click(() => {
-    $(".notice").hide();
-    $(".gallery").show();
-    $("#notice").removeClass("focus");
-    $("#gallery").addClass("focus");
 });
 
 $("#modal").click(() => {
