@@ -2,11 +2,11 @@ $(".sub-menu").hide();
 $(".modal").hide();
 
 $(".main-menu>ul>li").mouseover(function () {
-    $(this).children(".sub-menu").slideDown(300);
+    $(this).children(".sub-menu").stop().slideDown(300);
 });
 
 $(".main-menu>ul>li").mouseleave(function () {
-    $(this).children(".sub-menu").slideUp(300);
+    $(this).children(".sub-menu").stop().slideUp(300);
 });
 
 $("#modal").click(() => {
