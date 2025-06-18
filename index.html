@@ -2,57 +2,123 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>강원천문대</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <a href="" class="main-logo"></a>
+        <header>
+            <div class="logo1"><a href="#"><img src="images/logo1.png" alt="logo1"></a></div>
             <div class="main-menu">
-                <a href="">강원천문대
-                    <div class="sub-menu">
-                        <a href="">천문대소개</a>
-                        <a href="">인사말</a>
-                        <a href="">오시는길</a>
-                    </div>
-                </a>
-                <a href="">이용안내
-                    <div class="sub-menu">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </div>
-                </a>
-                <a href="">천문대예약
-                    <div class="sub-menu">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </div>
-                </a>
-                <a href="">커뮤니티
-                    <div class="sub-menu">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </div>
-                </a>
+                <ul>
+                    <li><a href="#">강원천문대</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이용안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">관람시간표</a></li>
+                            <li><a href="#">이달의 별자리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">천문대예약</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">예약취소</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">방문후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </header>
         <div class="slide">
-
+            <ul>
+                <li><a href="#"><img src="images/s1.jpg" alt="s1"></a></li>
+                <li><a href="#"><img src="images/s2.jpg" alt="s2"></a></li>
+                <li><a href="#"><img src="images/s3.jpg" alt="s3"></a></li>
+            </ul>
         </div>
-        <div class="contents">
-            
-        </div>
-        <div class="footer">
+        <section>
+            <div class="not-gal">
+                <div class="buttons">
+                    <button class="focus" id="notice">공지사항</button>
+                    <button id="gallery">갤러리</button>
+                </div>
+                <div class="notice">
+                    <ul>
+                        <li><a href="#" id="modal"><span>2019년 8월 문화가 있는 날 안내</span> <span class="date">2019-08-01</span></a></li>
+                        <li><a href="#"><span>온라인 예매 시 안내사항</span> <span class="date">2019-06-31</span></a></li>
+                        <li><a href="#"><span>2018년 12월 예매 및 휴관일 안내</span> <span class="date">2018-11-20</span></a></li>
+                        <li><a href="#"><span>스마트폰 예매시 주의사항  안내</span> <span class="date">2018-10-05</span></a></li>
+                        <li><a href="#"><span>결재 관련 설치 프로그램 지원</span> <span class="date">2018-06-02</span></a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <ul>
+                        <li><a href="#"><img src="images/g1.jpg" alt="g1"></a></li>
+                        <li><a href="#"><img src="images/g2.jpg" alt="g2"></a></li>
+                        <li><a href="#"><img src="images/g3.jpg" alt="g3"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="images/banner.jpg" alt="banner"></a>
+            </div>
+            <div class="shortcut">
+                <ul>
+                    <li><a href="#"><img src="images/baro1.jpg" alt="baro1"></a></li>
+                    <li><a href="#"><img src="images/baro2.jpg" alt="baro2"></a></li>
+                    <li><a href="#"><img src="images/baro3.jpg" alt="baro3"></a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="logo2">
+                <img src="images/logo2.png" alt="logo2">
+            </div>
+            <div class="right">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">방문객센터</a></li>
+                        <li><a href="#">새소식</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    대표자 : 김철수 사업자등록번호 : 605-82-05242 전화번호 : (033) 709-0700<br>
+                    Copyrightⓒ 2019 Gangwon Observatory. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
 
+    <div class="modal">
+        <div class="text">
+            <h3>강원천문대와 함께하는 문화가 있는 날</h3>
+            <p>매월 마지막주 수요일!!!<br>
+                15:30~16:30 태양관측<br>
+                16:30~17:30 가상별자리 여행<br>
+                <br>
+                태양관측은 날씨가 좋지 않아 관측이 안될 경우 <br>
+                천문학 기초강의로 변경됩니다.</p>
+        </div>
+        <div class="buttons">
+            <button id="quit">X 닫기</button>
         </div>
     </div>
-    <script src="javascript/jquery-1.12.4.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
